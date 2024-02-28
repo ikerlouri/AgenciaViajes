@@ -10,7 +10,7 @@ public class GestorBBDD extends Conector {
 
 	Cliente cliente = new Cliente();
 
-	public static ArrayList<Cliente> VER_SOCIOS() {
+	public static ArrayList<Cliente> VER_CLIENTES() {
 		ArrayList<Cliente> clientes = new ArrayList<>();
 
 		try {
@@ -147,5 +147,6 @@ public class GestorBBDD extends Conector {
 		}
 		
 	}
+
 
 }

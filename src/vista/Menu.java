@@ -37,7 +37,11 @@ public class Menu {
 			
 			switch (opcion) {
 			case 1:
-				clientes = GestorBBDD.VER_SOCIOS();
+				
+				clientes = GestorBBDD.VER_CLIENTES();
+				Visor.visualizarClientes(clientes);
+				clientes.sort(new Comparador());
+				System.out.println("/n");
 				Visor.visualizarClientes(clientes);
 				break;
 			case 2:
